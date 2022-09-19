@@ -131,7 +131,7 @@ export default (props)=>{
 
 export async function getServerSideProps(context) {
 
-    let data=await fetch('http://173.16.10.151:3001/api/getReporte');
+    let data=await fetch( process.env.HOST_URI + '/api/getReporte');
   
     data=await data.json();
     return {

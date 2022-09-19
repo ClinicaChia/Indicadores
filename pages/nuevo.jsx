@@ -206,9 +206,9 @@ export default (props)=>{
 export async function getServerSideProps(context) {
 
     
-    let sedes=await fetch('http://173.16.10.151:3001/api/getsedes');
+    let sedes=await fetch(process.env.HOST_URI+'/api/getsedes');
 
-    let actualU= await fetch('http://173.16.10.151:3001/api/getusers');
+    let actualU= await fetch( process.env.HOST_URI + '/api/getusers');
     
     sedes=await sedes.json();
 

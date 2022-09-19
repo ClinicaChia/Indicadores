@@ -146,7 +146,7 @@ export async function getServerSideProps(context) {
 
   const name=context.params.id;
 
-  let data=await fetch('http://173.16.10.151:3001/api/getdata',{ method: 'POST', body: JSON.stringify({ user: name })   });
+  let data=await fetch( process.env.HOST_URI + '/api/getdata',{ method: 'POST', body: JSON.stringify({ user: name })   });
   
    data=await data.json();
    
