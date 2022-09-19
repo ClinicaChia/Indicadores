@@ -1,0 +1,58 @@
+.main{
+    justify-content: center;
+}
+
+.main > div > section{
+    margin-left: 30%;
+    
+}
+
+.main > div > table{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.select{
+    width: 120px;
+    height: 30px;
+    margin-right: 5%;
+}
+
+
+
+.main > h1{
+    background-color: rgb(44, 66, 152);
+    margin-top: 0%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+
+.send{
+
+    
+
+    height: 30px;
+    margin-top: -10%;
+   
+    width: 15%;
+    
+    border: 2px solid rgb(44, 66, 152);
+    background-color: white;
+    color: rgb(44, 66, 152);
+    transition-property: border, background-color, color, height;
+    transition-duration: 0.7s;
+    
+}
+
+.send:hover{
+    
+    
+    border: 2px solid white;
+    background-color: rgb(44, 66, 152);
+    color: white;
+    
+
+}

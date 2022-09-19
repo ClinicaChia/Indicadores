@@ -1,0 +1,143 @@
+.container{
+    display: grid;
+    rid-template-columns: 25% 25% 25% 25%;
+    
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+    'header header header header'
+    'sed sed register register'
+    'sed sed register register'
+    'tabla tabla tabla tabla'
+  
+    
+    ;
+
+}
+
+.header{
+
+    text-align: center;
+    grid-area: header;
+    background-color: rgb(44, 66, 152);
+    padding-top: 1%;
+    padding-bottom: 0.1%;
+}
+
+.sed{
+    margin-left: 5%;
+    grid-area: sed;
+    
+}
+.register{
+    margin-top: 3%;
+    grid-area: register;
+    border:  5px solid rgb(44, 66, 152);
+    padding: 10px;
+}
+.sed h2, .register h2{
+  text-align: center;
+  color: rgb(44, 66, 152);
+}
+
+
+
+.lista{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+}
+
+
+.send{
+
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 10px;
+    grid-column: 3/4;
+    width: 20%;
+    height: 50%;
+    border: 2px solid rgb(44, 66, 152);
+    background-color: white;
+    color: rgb(44, 66, 152);
+    transition-property: border, background-color, color, height;
+    transition-duration: 0.5s;
+    
+}
+
+.send:hover{
+    
+    height: 70%;
+    border: 2px solid white;
+    background-color: rgb(44, 66, 152);
+    color: white;
+    
+
+}
+
+
+
+
+.box_input{
+    border-radius: 10px 0px 0px 10px;
+    text-align: right;
+    background-color: rgb(44, 66, 152);
+    width: 18%;
+    border: none;
+    color: white;
+    letter-spacing: 1pt;
+
+}
+
+.box_input:disabled{
+    background-color: rgb(44, 66, 152);
+}
+
+
+.place{
+    border: none;
+    border-bottom: 1px solid gray;
+    box-shadow:0 0 4px 4px rgba(0,0,0,0.1);
+    
+}
+
+.place:focus{
+    box-shadow: 0 0 10px #719ECE;
+    outline-color : rgb(44, 66, 152,0.5);
+}
+
+
+.tabla{
+    margin-top: 5%;
+    margin-left: 20%;
+    grid-area: tabla;
+}
+
+
+
+
+.sendE{
+
+    text-align: center;
+    
+    
+    grid-column: 3/4;
+    
+    height: 30px;
+    border: 2px solid red;
+    background-color: rgba(220, 252, 220, 0.473);
+    color: red;
+    transition-property: border, background-color, color, height;
+    transition-duration: 0.3s;
+    
+}
+
+.sendE:hover{
+    
+    height: 40px;
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    
+
+}

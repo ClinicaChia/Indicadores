@@ -1,0 +1,31 @@
+{
+  "name": "indicadores",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "serve": "pm2 start  server.js --name indicadores",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "mysql2": "^2.3.3",
+    "next": "12.1.4",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-hook-form": "^7.29.0",
+    "react-html-table-to-excel": "^2.0.0",
+    "react-multi-select-component": "^4.2.4",
+    "react-router-dom": "^6.3.0",
+    "react-select": "^5.2.2",
+    "sharp": "^0.30.4",
+    "wouter": "^2.8.0-alpha.2"
+  },
+  "devDependencies": {
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.4",
+    "eslint-plugin-react-hooks": "^4.4.0"
+  }
+}
