@@ -1,0 +1,225 @@
+.container{
+    display: grid;
+    grid-template-columns: 30% 30% 37%;
+    
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+    'header header header'
+    'botonera cheks cheks'
+    'td td td'
+    ;
+    gap: 20px;
+
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    color: white;
+    background-color: rgb(44, 66, 152);
+    padding-top: 0.5%;
+    padding-bottom: 0.1%;
+}
+
+.header > h2{
+    
+    text-align: center;
+    
+}
+
+.botonera{
+    text-align: center;
+    margin-left: 3%;
+   
+    grid-area: botonera;
+    
+}
+
+
+
+.panel{
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.send{
+
+    
+    text-align: center;
+    
+
+    
+    width: 50%;
+    height: 100%;
+    border: 2px solid rgb(44, 66, 152);
+    background-color: white;
+    color: rgb(44, 66, 152);
+    transition-property: border, background-color, color, height;
+    transition-duration: 0.7s;
+    
+}
+
+.send:hover{
+    
+   
+    border: 2px solid white;
+    background-color: rgb(44, 66, 152);
+    color: white;
+    
+
+}
+
+.cheks{
+    grid-area: cheks;
+}
+
+.consulta{
+    grid-area: consulta;
+}
+
+.td{
+    margin-top: 50px;
+   grid-area: td; 
+}
+
+
+
+
+.lista{
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+
+}
+
+.container_td{
+
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+    
+    'botoneraT cheksT cheksT'
+    'headerT headerT headerT'
+    't t t'
+    'dm dm dm'
+    ;
+    gap: 20px;
+
+}
+
+
+
+.botoneraT{
+    text-align: center;
+    margin-left: -10%;
+    grid-area: botoneraT;
+    margin-bottom: 60px;
+}
+
+
+.cheksT{
+   
+    margin-left: -6%;
+    grid-area: cheksT;
+}
+
+.t{
+    grid-area: t;
+}
+
+.dm{
+    justify-content: center;
+    text-align: center;
+    grid-area: dm;
+}
+
+.sendT{
+
+    
+    text-align: center;
+    max-height: 100px;
+    margin-top: 10px;
+    width: 10%;
+    height: 20%;
+    border: 2px solid rgb(44, 66, 152);
+    background-color: white;
+    color: rgb(44, 66, 152);
+    transition-property: border, background-color, color, height;
+    transition-duration: 0.7s;
+    
+}
+
+.sendT:hover{
+    
+    max-height: 100px;
+    border: 2px solid white;
+    background-color: rgb(44, 66, 152);
+    color: white;
+    
+
+}
+
+.headerT{
+    padding-top: 5%;
+    text-align: center;
+    grid-area: headerT;
+    margin-bottom: 3%;
+}
+
+.headerT > select{
+
+    
+    text-align: center;
+    width: 30%;
+    
+    font-size: larger;
+    
+}
+
+.botonera > h3,.cheks > h3,.consulta > h3 
+,.botoneraT >h3, .cheksT > h3
+{
+   
+    text-align: center;
+    color: rgb(44, 66, 152);
+    position: static;
+}
+
+.send2{
+
+    
+    float: right;
+    max-height: 100px;
+    margin-top: 3%;
+   
+    width: 8%;
+    height: 20%;
+    border: 2px solid rgb(44, 66, 152);
+    background-color: white;
+    color: rgb(44, 66, 152);
+    transition-property: border, background-color, color, height;
+    transition-duration: 0.7s;
+    
+}
+
+.send2:hover{
+    
+    max-height: 100px;
+    border: 2px solid white;
+    background-color: rgb(44, 66, 152);
+    color: white;
+    
+
+}
+
+.botonera > div{
+    margin-top: 20px;
+    height: 40px;
+}
+
+.botoneraT > div{
+    margin-top: 20px;
+    height: 40px;
+}

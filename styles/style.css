@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+:root {
+  --color-clinica: rgb(44, 66, 152);
+}
+body{
+  font-family:  sans-serif;
+ 
+  
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+
+
+table, th, td {
+    border: 0.5px solid black;
+  }
+
+  th{
+    min-width: 100px;
+    height: 40px;
+    background-color: rgb(44, 66, 152);
+    color: white;
+  }
+
+  tr:nth-child(odd){
+    background-color: rgba(220, 252, 220, 0.473)}
+
+  td{
+    text-align: center;
+  }
+
+  table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    overflow-x: scroll;
+  }
+
+  /* Remove default bullets */
+.hidden{
+  display: none;
+}
+
+
+
+
+
+
